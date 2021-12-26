@@ -1,0 +1,48 @@
+.column {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background-color: gray;
+}
+@keyframes redsquar {
+    0%{
+        transform: translate(0px);
+    }
+    50%{
+        transform: translate(160px);
+    }
+    100%{
+        transform: translate(160px,-160px);
+    }
+}
+.redsquare{
+    animation-name: redsquar;
+    animation-duration: 5s;
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    animation-fill-mode: forwards;
+    
+}
+.container{
+    position: relative;
+}
+.bluesquare{
+    animation-name: bluesquar;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+}
+@keyframes bluesquar {
+    0%{
+        transform: translate(0px);
+    }
+    50%{
+        transform: translate(-160px);
+    }
+    100%{
+        transform: translate(-160px,160px);
+    }
+}
